@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>Footer</title>
+	<style>
+		.s0 { fill: #eb662b } 
+	</style>
+	<g id="Footer">
+		<path id="-e-icon-contact" fill-rule="evenodd" class="s0" d="m11 20h-4.4v-4.4l12.8-13 4.4 4.4zm8.4-14.6l-9.4 9.6 1.5 1.6 9.5-9.6zm-9.3 12.6l-1.6-1.6v1.6zm7.3 6h-16.7v-24h16.7v4h-1.9v-2h-12.8v20h12.8v-5h1.9zm-4.9-18h-7.8v-2h7.8zm-7.8 2h4.9v2h-4.9zm0 4h1.9v2h-1.9z"/>
+	</g>
+</svg>

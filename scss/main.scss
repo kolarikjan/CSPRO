@@ -1,0 +1,37 @@
+/* 
+Theme name: Kosyka
+Author: Jan Kolařík
+Author's url: www.jan-kolarik.cz
+*/
+
+// Defaults
+@import "defaults/variables";
+@import "defaults/resets";
+@import "defaults/functions";
+
+// Page Components
+@import "components/animations";
+@import "components/buttons";
+@import "components/banners";
+@import "components/sections";
+@import "components/aboutus";
+@import "components/products";
+@import "components/copyright";
+@import "components/news";
+@import "components/quality";
+@import "components/technologies";
+@import "components/containers";
+@import "components/forms";
+@import "components/benefits";
+@import "components/positions";
+@import "components/address";
+@import "components/contacts";
+@import "components/components";
+@import "components/download";
+
+// Pages
+@import "pages/subpage";
+
+// Layouts
+@import "layout/header";
+@import "layout/footer";
