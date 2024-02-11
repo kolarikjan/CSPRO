@@ -1,0 +1,1 @@
+.references-row{display:grid;grid-template-columns:repeat(3, 1fr);gap:1.5rem}.references-item img{border-radius:7px;object-fit:cover;width:100%;aspect-ratio:1/1}

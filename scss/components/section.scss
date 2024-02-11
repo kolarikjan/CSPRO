@@ -1,0 +1,117 @@
+.section {
+    padding: 5rem 0;
+    @media (max-width: $md) {
+        padding: 3rem 0;
+    }
+    &-background {
+        &-default {
+            background-color: $section-color;
+            color: $secondary-color;
+        }
+        &-light {
+            background-color: $section-light-color;
+        }
+    }
+    &-header {
+        margin-bottom: 3rem;
+        text-align: center;
+        @media (max-width: $md) {
+            margin-bottom: 2.25rem;
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            color: $primary-color;
+            font-family: $font2;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+    }
+    &-background-default &-header h2 {
+        color: $secondary-color;
+    }
+    &-output {
+        h1, h2, h3, h4, h5, h6 {
+            color: $primary-color;
+            font-family: $font2;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 38px;
+            line-height: 44px;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        h3 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+        h4 {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        h5 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        p, li, td {
+            font-size: 16px;
+            line-height: 26px;
+            color: $paragraph-color;
+            font-weight: 400;
+        }
+        ul {
+            padding-left: 1rem;
+            li {
+                padding-inline-start: 0.5rem;
+                &::marker {
+                    content: "-";
+                    color: $highlight-color;
+                    font-weight: 700;
+                }
+            }
+        }
+        ol {
+            padding-left: 1.5rem;
+            li {
+                &::marker {
+                    color: $highlight-color;
+                    font-weight: 600;
+                }
+            }
+        }
+        table {
+            width: 100%;
+            tr {
+                &:first-child {
+                    background-color: $table-color;
+                    td, th {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: $primary-color;
+                        font-weight: 700;
+                        @media (max-width: $md) {
+                            min-width: 175px;
+                        }
+                    }
+                }
+                &:not(:first-child) {
+                    border-bottom: 1px solid $table-color;
+                }
+                td, th {
+                    padding: 1rem 2rem;
+                    @media (max-width: $md) {
+                        padding: 1rem 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+}

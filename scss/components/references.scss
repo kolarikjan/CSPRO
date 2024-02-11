@@ -1,0 +1,107 @@
+.references {
+    &-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1.5rem;
+        @media (max-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &-owl {
+        .owl-nav {
+            margin: 0;
+            @media (max-width: $sm) {
+                margin: 1.5rem 0 0;
+                @include flexCenter();
+                gap: .5rem;
+            }
+            button {
+                position: absolute;
+                top: calc(50% - 23.5px);
+                transform: translate(0,-50%);
+                background-color: $secondary-color !important;
+                width: 42px;
+                aspect-ratio: 1/1;
+                @include flexCenter();
+                border-radius: 50%;
+                transition: .15s ease-in-out;
+                @media (max-width: $sm) {
+                    position: unset;
+                    transform: none;
+                }
+                &.owl-prev {
+                    left: -4rem;
+                    svg {
+                        margin-left: -.125rem;
+                        transform: rotate(180deg);
+                    }
+                }
+                &.owl-next {
+                    right: -4rem;
+                    svg {
+                        margin-right: -.125rem;
+                    }
+                }
+                svg {
+                    transition: .15s ease-in-out;
+                }
+                &:hover {
+                    background-color: $highlight-color !important;
+                    svg {
+                        fill: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    &-item {
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        &-imagebox {
+            position: relative;
+            overflow: hidden;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -75%;
+                z-index: 2;
+                display: block;
+                content: "";
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                transform: skewX(-25deg);
+            }
+            &:hover::before {
+                animation: shine 0.75s;
+            }
+        }
+        img {
+            border-radius: 3px;
+            object-fit: cover;
+            width: 100%;
+            aspect-ratio: 1.35/1;
+        }
+        span {
+            display: block;
+            text-align: center;
+            margin: 1.5rem 0 0;
+            font-size: 17px;
+            line-height: 23px;
+            color: $primary-color;
+            font-weight: 700;
+            transition: .15s ease-in-out;
+        }
+        &:hover {
+            span {
+                color: $highlight-color;
+            }
+        }
+    }
+}

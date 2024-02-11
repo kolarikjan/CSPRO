@@ -4,11 +4,11 @@
     <!-- DEFAULTS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kosyka</title>
+    <title>CSPRO</title>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/ico">
     <!-- STYLE -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header header-extended">
+    <header class="header">
         <div class="container container-xl-fluid">
             <nav class="header-nav navbar navbar-expand-lg navbar-light">
                 <a class="header-logo flex-shrink-0 order-0" href="#">
@@ -30,688 +30,255 @@
                 <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="animated-icon"><span></span><span></span><span></span></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center justify-content-lg-start justify-content-xl-center order-2 order-lg-3 order-xl-2" id="nav">
+                <div class="header-collapse collapse navbar-collapse order-3 order-xl-1" id="nav">
                     <div class="header-menu">
-                        <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-center mb-0">
+                        <ul class="list-unstyled mb-0">
                             <li class="header-menu-link">
-                                <a href="">O společnosti</a>
-                            </li>
-                            <li class="header-menu-link">
-                                <a href="">Produkty</a>
-                            </li>
-                            <li class="header-menu-link">
-                                <a href="">Kvalita</a>
-                            </li>
-                            <li class="header-menu-link">
-                                <a href="">Technologie</a>
+                                <a href="">Home</a>
                             </li>
                             <li class="header-menu-dropdown header-menu-link">
                                 <a href="">
-                                    Nabídky spolupráce
-                                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8" fill="#fff">
-                                        <g id="Menu-top">
-                                            <path id="-e-icon-arrow-default" class="s0" d="m7 7.4l5-4.9c0.4-0.4 0.4-1.1 0-1.5-0.4-0.4-1.1-0.4-1.5 0l-4.2 4.2-4.3-4.2c-0.4-0.4-1-0.4-1.4 0-0.3 0.2-0.4 0.5-0.4 0.7 0 0.3 0.1 0.6 0.4 0.8l4.9 4.9c0.2 0.2 0.5 0.3 0.8 0.3 0.2 0 0.5-0.1 0.7-0.3z"/>
-                                        </g>
-                                    </svg>
+                                    Produkty
                                 </a>
                                 <div class="header-menu-dropdown-menu">
                                     <div>
-                                        <a href="" class="dropdown-hover-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
-                                            Spolupáce 1
+                                        <a href="" class="header-menu-dropdown-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Produkt jméno 1
                                         </a>
-                                        <a href="" class="dropdown-hover-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
-                                            Spolupáce 2
+                                        <a href="" class="header-menu-dropdown-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Produkt jméno 2
                                         </a>
-                                        <a href="" class="dropdown-hover-item">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
-                                            Spolupáce 3
+                                        <a href="" class="header-menu-dropdown-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="11px"><path fill-rule="evenodd" d="M6.466,4.435 L2.522,0.470 C2.114,0.061 1.453,0.061 1.045,0.470 C0.637,0.880 0.637,1.544 1.045,1.953 L4.268,5.194 L1.045,8.435 C0.637,8.844 0.637,9.508 1.045,9.917 C1.249,10.122 1.516,10.224 1.784,10.224 C2.051,10.224 2.318,10.122 2.522,9.917 L6.466,5.954 C6.674,5.744 6.775,5.468 6.771,5.194 C6.775,4.920 6.674,4.644 6.466,4.435 Z"></path></svg>
+                                            Produkt jméno 3
                                         </a>
                                     </div>
                                 </div>
                             </li>
                             <li class="header-menu-link">
-                                <a href="">Kariéra</a>
+                                <a href="">Foukaná izolace</a>
+                            </li>
+                            <li class="header-menu-link">
+                                <a href="">Reference</a>
                             </li>
                             <li class="header-menu-link">
                                 <a href="">Kontakt</a>
                             </li>
-                            <li class="">
-                                <div class="header-rightbox d-flex d-lg-none flex-column justify-content-center align-items-center">
-                                    <div class="header-rightbox-icons d-flex align-items-center">
-                                        <div class="header-search">
-                                            <a href="#">
-                                                <img src="img/icons/icon-search.svg" alt="search">
-                                            </a>
-                                            <div class="header-search-inner">
-                                                <form class="position-relative h-100">
-                                                    <div class="d-flex w-fit mx-auto align-items-center h-100">
-                                                        <div class="position-relative">
-                                                            <input type="text" name="search">
-                                                            <button class="button button-cyan button-shine">Hledat</button>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="header-search-close d-lg-none">
-                                                        <span class="animated-icon open"><span></span><span></span><span></span></span>
-                                                    </a>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="header-rightbox-icons-dropdown">
-                                            <a href="#">
-                                                cz
-                                            </a>
-                                            <div class="header-rightbox-icons-dropdown-content">
-                                                <div>
-                                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
-                                                        <li>
-                                                            <a href="#">
-                                                                <img src="img/flags/flag_de.png" alt="de">
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <img src="img/flags/flag_en.png" alt="en">
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-contact order-2 order-xl-3 d-none d-lg-block">
+                    <a href="tel:+420603321169">+420 603 321 169</a>
+                    <a href="mailto:info@csproservis.cz">info@csproservis.cz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner-main">
+                <div class="container">
+                    <h1>CS PRO SERVIS</h1>
+                    <h2>Požární bezpečnost staveb</h2>    
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme banner-owl">
+                <div class="banner-item">
+                    <img src="img/theme-images/banner.png" alt="banner image">
+                </div>
+                <div class="banner-item">
+                    <img src="img/theme-images/banner.png" alt="banner image">
+                </div>
+            </div>
+        </div>
+        <div class="services section">
+            <div class="container">
+                <div class="services-row">
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-ucpavky.svg" alt="ucpavky">
+                        <span>Protipožární ucpávky</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-dvirka.svg" alt="dvirka">
+                        <span>Protipožární revizní dvířka</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-obklady.svg" alt="obklady">
+                        <span>Protipožární obklady</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-omitka.svg" alt="omitka">
+                        <span>Protipožární omítky</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-nater.svg" alt="nater">
+                        <span>protipožární nátěry</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-pristroj.svg" alt="pristroj">
+                        <span>Hasící přístroje</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-sachty.svg" alt="sachty">
+                        <span>Protipožární kanály, šachty</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-pbz.svg" alt="pbz">
+                        <span>Kontrola provozuschopnosti PBZ</span>
+                    </a>
+                    <a href="#" class="services-item">
+                        <img src="img/icons/icon-izolace.svg" alt="izolace">
+                        <span>foukaná izolace</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about section section-background-default">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="about-text">
+                            <h2>Požární bezpečnost staveb</h2>
+                            <p>Naší hlavní činnosti je dodání a montáž protipožárních ucpávek, protipožárních dvířek, obkladů, nátěrů, nástřiků, hasících přístrojů a foukané izolace.</p>
+                        </div>
+                        <div class="about-contact">
+                            <h3>Potřebujete s něčím poradit nebo se zeptat? Neváhejte nás kontaktovat.</h3>
+                            <a href="#" class="button-default">
+                                Kontaktujte nás
+                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="20" height="8"><g id="Solutions"><path id="-e-arrow-default" class="s0" d="m20 4l-3.5-3.7q-0.3-0.3-0.7-0.3-0.3 0-0.6 0.3-0.3 0.3-0.3 0.7 0 0.4 0.3 0.7l1.2 1.3h-15.5c-0.5 0-0.9 0.4-0.9 1 0 0.6 0.4 1 0.9 1h15.5l-1.2 1.3q-0.3 0.3-0.3 0.7 0 0.4 0.3 0.7 0.3 0.3 0.6 0.3 0.4 0 0.7-0.3l3.5-3.7z"/></g></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5 offset-xl-1 mt-5 mt-xl-0">
+                        <ul class="about-benefits">
+                            <li>Dodání a montáž požárněbezpečnostních zařizení</li>
+                            <li>Roční kontroly PBZ</li>
+                            <li>Foukaná izolace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="references section section-background-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Reference</h2>
+                </div>
+                <div class="references-owl owl-carousel">
+                    <a class="references-item" href="img/theme-images/reference1.png" data-fancybox="">
+                        <div class="references-item-imagebox">
+                            <img src="img/theme-images/reference1.png" alt="reference" class="img-fluid">
+                        </div>
+                        <span>Olomouc -Šantova ulice, 600 bytů</span>
+                    </a>
+                    <a class="references-item" href="img/theme-images/reference2.png" data-fancybox="">
+                        <div class="references-item-imagebox">
+                            <img src="img/theme-images/reference2.png" alt="reference" class="img-fluid">
+                        </div>
+                        <span>Stavebniny DEK Praha</span>
+                    </a>
+                    <a class="references-item" href="img/theme-images/reference3.png" data-fancybox="">
+                        <div class="references-item-imagebox">
+                            <img src="img/theme-images/reference3.png" alt="reference" class="img-fluid">
+                        </div>
+                        <span>Bytový dům Porta Resoluta - Brno</span>
+                    </a>
+                    <a class="references-item" href="img/theme-images/reference2.png" data-fancybox="">
+                        <div class="references-item-imagebox">
+                            <img src="img/theme-images/reference2.png" alt="reference" class="img-fluid">
+                        </div>
+                        <span>Stavebniny DEK Praha</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-4 order-0">
+                    <div class="footer-item footer-item-logo">
+                        <div class="section-output">
+                            <h3>CS PRO SERVIS s.r.o.</h3>
+                            <p>
+                            Hodějice 358<br>
+                            684 01 Hodějice
+                            </p>
+                            <p>
+                                Telefon:<br>
+                                <a href="tel:+420 603 321 169" class="footer-phone">+420 603 321 169</a>
+                                <a href="mailto:info@csproservis.cz" class="footer-email">info@csproservis.cz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 order-1 order-lg-2 order-xl-1 mt-5 mt-xl-0">
+                    <div class="footer-item footer-item-middle">
+                        <h3 class="mb-3">Produkty</h3>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">
+                                    Protipožární ucpávky
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protipožární revizní dvířka                                
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protipožární obklady
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protipožární nátěry
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nabídky spolupráce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Protipožární omítky
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Kontrola provozuschopnosti PBZ
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="header-rightbox d-none d-lg-flex flex-column flex-md-row align-items-start align-items-md-center order-3 order-lg-2 order-xl-3 ms-0 ms-lg-auto ms-xl-0">
-                    <div class="header-rightbox-icons d-flex align-items-center">
-                        <div class="header-search">
-                            <a href="#">
-                                <img src="img/icons/icon-search.svg" alt="search">
-                            </a>
-                            <div class="header-search-inner">
-                                <form class="position-relative h-100">
-                                    <div class="d-flex w-fit mx-auto align-items-center h-100">
-                                        <div class="position-relative">
-                                            <input type="text" name="search">
-                                            <button class="button button-cyan button-shine">Hledat</button>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="header-search-close d-lg-none">
-                                        <span class="animated-icon open"><span></span><span></span><span></span></span>
-                                    </a>
-                                </form>
-                            </div>
+                <div class="col-12 col-lg-6 col-xl-4 order-2 order-lg-1 order-xl-2 mt-5 mt-lg-0">
+                    <div class="footer-contact">
+                        <div class="footer-contact-top">
+                            <p>pokud potřebujete více informací</p>
+                            <h4>Neváhejte nás kontaktovat</h4>
                         </div>
-                        <div class="header-rightbox-icons-dropdown">
-                            <a href="#">
-                                cz
-                            </a>
-                            <div class="header-rightbox-icons-dropdown-content">
-                                <div>
-                                    <ul class="list-unstyled d-flex flex-column align-items-center mb-0">
-                                        <li>
-                                            <a href="#">
-                                                <img src="img/flags/flag_de.png" alt="de">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img src="img/flags/flag_en.png" alt="en">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="header-banner">
-            <div class="container-split">
-                <div class="row scroll-hidden">
-                    <div class="col-12 col-xl-6 order-2 order-xl-1">
-                        <div class="container container-split-left container-split-xl h-100 scroll-animation-left">
-                            <div class="header-banner-text">
-                                <h2>Největší nezávislý 100% český výrobce kabeláží a kabelových svazků.</h2>
-                                <div class="header-banner-numbers">
-                                    <p>Celosvětově přes <span>50 klientů.</span></p>
-                                    <p>V roce 2020 vyrobeno více než <span>20 milionů produktů.</span></p>
-                                </div>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-6 order-1 order-xl-2 container-split-mobile-nospacing scroll-animation-right header-banner-owl">
-                        <div class="owl-carousel owl-theme owl-banner-home">
-                            <div class="header-banner-item">
-                                <img src="img/section-banner-home-item1.png" alt="banner image">
-                            </div>
-                            <div class="header-banner-item">
-                                <img src="img/section-banner-home-item1.png" alt="banner image">
-                            </div>
-                            <div class="header-banner-item">
-                                <img src="img/section-banner-home-item1.png" alt="banner image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section section-aboutus">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-xl-6 scroll-animation-bottom">
-                    <div class="section-aboutus-texts">
-                        <div class="section-title">
-                            <h1>Společnost KOSYKA</h1>    
-                        </div>
-                        <h2 class="section-aboutus-largeText">KOSYKA, s.r.o. byla založena v dubnu roku 1995.<br>Od svého založení se zabývá montáží konektorů a výrobou kabeláží pro spotřební elektroniku, automobilový průmysl a mnohá další průmyslová odvětví.</h2>
-                        <p class="section-aboutus-smallText">Mimo výrobní činnost se dále věnujeme obchodní činnosti v oblasti kontaktů a konektorů. KOSYKA, s.r.o. je výhradním obchodním zástupcem firem J.S.T. Mfg. Co., Ltd. a Franz Binder GmbH & Co. Elektrische Bauelemente KG pro Českou republiku.</p>
-                        <div class="section-footer d-none d-xl-block">
-                            <a href="#" class="button button-cyan">
-                                Více o společnosti
-                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                                    <g id="About">
-                                        <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-6 scroll-animation-bottom">
-                    <div class="section-aboutus-counters">
-                        <h3 class="section-label">KOSYKA v číslech</h3>
-                        <div class="section-aboutus-counters-content">
-                            <div class="row justify-content-center justify-content-md-start">
-                                <div class="col-12 col-md-4 col-lg-3 col-xl-4">
-                                    <div class="section-aboutus-counters-item">
-                                        <p>
-                                            <span data-value="45">0</span>
-                                            % odbyt pro automobilový průmysl
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 col-xl-4">
-                                    <div class="section-aboutus-counters-item">
-                                        <p>
-                                            <span data-value="150">0</span>
-                                            Počet zaměstnanců
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 col-xl-4">
-                                    <div class="section-aboutus-counters-item">
-                                        <p>
-                                            <span data-value="55">0</span>
-                                            % odbyt pro ostatní průmyslová odvětví
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-footer d-xl-none">
-                        <a href="#" class="button button-cyan">
-                            Více o společnosti
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                                <g id="About">
-                                    <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                                </g>
-                            </svg>
+                        <a href="#" class="button-default button-default-reversed">
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g id="Footer"><path id="-e-icon-contact" fill-rule="evenodd" class="s0" d="m11 20h-4.4v-4.4l12.8-13 4.4 4.4zm8.4-14.6l-9.4 9.6 1.5 1.6 9.5-9.6zm-9.3 12.6l-1.6-1.6v1.6zm7.3 6h-16.7v-24h16.7v4h-1.9v-2h-12.8v20h12.8v-5h1.9zm-4.9-18h-7.8v-2h7.8zm-7.8 2h4.9v2h-4.9zm0 4h1.9v2h-1.9z"/></g></svg>
+                            Kontaktovat
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section-products section section-dark section-background-light">
-        <div class="container-split">
-            <div class="row scroll-hidden">
-                <div class="col-12 col-lg-6 container-split-mobile-nospacing scroll-animation-left">
-                    <div class="section-products-gallery">
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item1.png" alt="product">
-                            <span>automotive</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item2.png" alt="product">
-                            <span>defence</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item3.png" alt="product">
-                            <span>aerospace</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item4.png" alt="product">
-                            <span>železnice</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item5.png" alt="product">
-                            <span>zdravotnictví</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item6.png" alt="product">
-                            <span>bílé zboží</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item7.png" alt="product">
-                            <span>měřící technika</span>
-                        </a>
-                        <a href="#" class="section-products-gallery-item">
-                            <img src="img/section-products-item8.png" alt="product">
-                            <span>ostatní</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 scroll-animation-right">
-                    <div class="section-products-texts">
-                        <div class="container container-split-right">
-                            <div class="section-products-texts-inner">
-                                <div class="section-title">
-                                    <h2>Produkty</h2>
-                                </div>
-                                <div class="section-output">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                                </div>
-                                <div class="section-footer">
-                                    <a href="#" class="button button-cyan">
-                                        Více informací
-                                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                                            <g id="About">
-                                                <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                                            </g>
-                                        </svg>
-                                    </a>    
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
+            <div class="footer-copyright">
+                <p>
+                    <span>Copyright © csproservis.cz</span>
+                    <span>Tvorba www stránek <a href="https://machin.cz/" target="_blank">MACHIN.cz</a></span>
+                </p>
             </div>
         </div>
-    </div>
-
-    <div class="section section-technologies">
-        <div class="container">
-            <div class="section-title scroll-animation-bottom">
-                <h2>Technologie</h2>
-            </div>
-        </div>
-        <div class="container-split">
-            <div class="row">
-                <div class="col-12 col-lg-6 scroll-animation-bottom">
-                    <div class="container container-split-left">
-                        <div class="section-technologies-list section-output">
-                            <ul>
-                                <li>
-                                    Krimpování
-                                </li>
-                                <li>
-                                    Krimpování s těsněním
-                                </li>
-                                <li>
-                                    Kabelová koncovka / dutinka
-                                </li>
-                                <li>
-                                    Splice
-                                </li>
-                                <li>
-                                    Stáčení
-                                </li>
-                                <li>
-                                    Zpracování řezných kontaktů
-                                </li>
-                                <li>
-                                    Pájení
-                                </li>
-                                <li>
-                                    Zhutňování
-                                </li>
-                                <li>
-                                    Cínování
-                                </li>
-                                <li>
-                                    Zalévání konektorů
-                                </li>
-                                <li>
-                                    Střih + odpláštění / odizolování
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 mt-5 mt-lg-0 scroll-animation-bottom">
-                    <div class="section-technologies-banner">
-                        <div class="container">
-                            <div class="section-title">
-                                <h3>Naše technologické zázemí</h3>
-                            </div>
-                            <div class="owl-carousel owl-theme owl-banner-technologies owl-custom-nav">
-                                <a href="img/section-technologies-item1.png" data-fancybox="section-technologies">
-                                    <img src="img/section-technologies-item1.png" alt="technology">
-                                </a>
-                                <a href="img/section-technologies-item2.png" data-fancybox="section-technologies">
-                                    <img src="img/section-technologies-item2.png" alt="technology">
-                                </a>
-                                <a href="img/section-technologies-item1.png" data-fancybox="section-technologies">
-                                    <img src="img/section-technologies-item1.png" alt="technology">
-                                </a>
-                                <a href="img/section-technologies-item2.png" data-fancybox="section-technologies">
-                                    <img src="img/section-technologies-item2.png" alt="technology">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section section-quality section-spacing-reduce">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1 scroll-animation-bottom">
-                    <div class="section-quality-certificates">
-                        <a href="#"  class="section-quality-certificates-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 43 48" width="43" height="48" class="section-quality-certificates-item-icon">
-                                <g id="Cert">
-                                    <path id="-e-icon-file" fill-rule="evenodd" class="s0" d="m2 43h21v2h-23v-37.4l7.6-7.6h26.4v15h-2v-13h-22v8h-8zm0.4-35h5.6v-5.6zm40.6 11v18.7l-13 10.3-13-10.3v-18.7h7v3h2v-5h8v5h2v-3zm-2 2h-3v3h-6v-5h-4v5h-6v-3h-3v15.7l10 8v-18.7h2v18.7l10-8z"/>
-                                </g>
-                            </svg>
-                            <span>ISO 9001: 2015</span>
-                            <div class="section-quality-certificates-item-plus">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 14 14" width="14" height="14">
-                                    <g id="Technology">
-                                        <path id="-e-icon-plus" class="s0" d="m0 6h14v2h-14zm8-6v14h-2v-14z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#"  class="section-quality-certificates-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 43 48" width="43" height="48" class="section-quality-certificates-item-icon">
-                                <g id="Cert">
-                                    <path id="-e-icon-file" fill-rule="evenodd" class="s0" d="m2 43h21v2h-23v-37.4l7.6-7.6h26.4v15h-2v-13h-22v8h-8zm0.4-35h5.6v-5.6zm40.6 11v18.7l-13 10.3-13-10.3v-18.7h7v3h2v-5h8v5h2v-3zm-2 2h-3v3h-6v-5h-4v5h-6v-3h-3v15.7l10 8v-18.7h2v18.7l10-8z"/>
-                                </g>
-                            </svg>
-                            <span>ISO 14001: 2015</span>
-                            <div class="section-quality-certificates-item-plus">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 14 14" width="14" height="14">
-                                    <g id="Technology">
-                                        <path id="-e-icon-plus" class="s0" d="m0 6h14v2h-14zm8-6v14h-2v-14z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#"  class="section-quality-certificates-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 43 48" width="43" height="48" class="section-quality-certificates-item-icon">
-                                <g id="Cert">
-                                    <path id="-e-icon-file" fill-rule="evenodd" class="s0" d="m2 43h21v2h-23v-37.4l7.6-7.6h26.4v15h-2v-13h-22v8h-8zm0.4-35h5.6v-5.6zm40.6 11v18.7l-13 10.3-13-10.3v-18.7h7v3h2v-5h8v5h2v-3zm-2 2h-3v3h-6v-5h-4v5h-6v-3h-3v15.7l10 8v-18.7h2v18.7l10-8z"/>
-                                </g>
-                            </svg>
-                            <span>IATF 16949</span>
-                            <div class="section-quality-certificates-item-plus">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 14 14" width="14" height="14">
-                                    <g id="Technology">
-                                        <path id="-e-icon-plus" class="s0" d="m0 6h14v2h-14zm8-6v14h-2v-14z"/>
-                                    </g>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="section-footer d-lg-none">
-                        <a href="#" class="button button-cyan">
-                            Více o společnosti
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                                <g id="About">
-                                    <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2 scroll-animation-bottom">
-                    <div class="section-title">
-                        <h2>Kvalita a certifikáty</h2>
-                    </div>
-                    <div class="section-output">
-                        <p>Veškerá výrobní činnost včetně její přípravy je podřízena principu zajištění nulové chybovosti. Princip trvalého zlepšování a stabilní výrobní procesy, podpořené opatřeními k předcházení vzniku chyb a trvalou kontrolou procesů, jsou základem kvalitní výroby. </p>
-                    </div>
-                    <div class="section-footer d-none d-lg-block">
-                        <a href="#" class="button button-cyan">
-                            Více informací
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                                <g id="About">
-                                    <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                                </g>
-                            </svg>
-                        </a>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section-news section section-background-light scroll-animation-bottom">
-        <div class="container">
-            <div class="section-title scroll-animation-bottom">
-                <h2>Tiskové zprávy a aktuality</h2>
-            </div>
-            <div class="row section-news-row">
-                <div class="col-12 col-md-6 col-xl-4 scroll-animation-bottom">
-                    <div class="section-news-item">
-                        <a href="#" class="section-news-item-image">
-                            <img src="img/section-news-item1.png" alt="news" class="img-fluid">
-                        </a>
-                        <div class="section-news-item-body">
-                            <div>
-                                <div class="section-news-item-date">23.7.2019</div> 
-                                <a href="#" class="section-news-item-title">
-                                    Lorem ipsum dolor sit amet
-                                </a>
-                                <p class="section-news-item-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </p>
-                            </div>
-                            <a href="" class="section-news-item-more">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
-                                    <g id="News">
-                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 scroll-animation-bottom">
-                    <div class="section-news-item">
-                        <a href="#" class="section-news-item-image">
-                            <img src="img/section-news-item2.png" alt="news" class="img-fluid">
-                        </a>
-                        <div class="section-news-item-body">
-                            <div>
-                                <div class="section-news-item-date">23.7.2019</div>    
-                                <a href="#" class="section-news-item-title">
-                                    Lorem ipsum dolor sit amet
-                                </a>
-                                <p class="section-news-item-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </p>
-                            </div>
-                            <a href="" class="section-news-item-more">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
-                                    <g id="News">
-                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 scroll-animation-bottom">
-                    <div class="section-news-item">
-                        <a href="#" class="section-news-item-image">
-                            <img src="img/section-news-item3.png" alt="news" class="img-fluid">
-                        </a>
-                        <div class="section-news-item-body">
-                            <div>
-                                <div class="section-news-item-date">23.7.2019</div>    
-                                <a href="#" class="section-news-item-title">
-                                    Lorem ipsum dolor sit amet
-                                </a>
-                                <p class="section-news-item-description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                </p>
-                            </div>
-                            <a href="" class="section-news-item-more">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 34 9" width="34" height="9">
-                                    <g id="News">
-                                        <path id="-e-icon-arrow-button-large" class="s0" d="m33.9 4.9q0-0.1 0-0.1 0.1-0.1 0.1-0.3 0-0.2-0.1-0.3 0 0 0 0 0-0.2-0.1-0.3 0 0 0 0l-3-3.6c-0.3-0.4-0.9-0.4-1.3-0.1-0.3 0.2-0.4 0.5-0.4 0.8q0 0.3 0.2 0.6l1.7 1.9h-30c-0.6 0-1 0.5-1 1 0 0.5 0.4 1 1 1h30l-1.7 1.9q-0.2 0.3-0.2 0.6c0 0.3 0.1 0.6 0.4 0.8q0.3 0.2 0.7 0.2 0.4 0 0.6-0.3l3-3.6q0 0 0 0 0.1-0.1 0.1-0.2z"/>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-footer">
-                <a href="" class="button button-cyan mx-auto">
-                    Archiv aktualit
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 8" width="25" height="8">
-                        <g id="About">
-                            <path id="-e-icon-arrow-button" class="s0" d="m25 4l-4.1-3.8q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2v0.1q-0.3 0.2-0.3 0.5 0 0.4 0.3 0.6l1.8 1.8h-20.6c-0.5 0-0.9 0.3-0.9 0.8 0 0.5 0.4 0.8 0.9 0.8h20.6l-1.8 1.8q-0.3 0.2-0.3 0.6 0 0.3 0.3 0.5v0.1q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2l4.1-3.8z"/>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="row footer-row">
-                <div class="col-12 col-md-12 col-lg-6 col-xl-3 offset-xl-2">
-                    <div class="footer-item">
-                        <div class="footer-item-header">
-                            <div>
-                                <img src="img/icons/icon-pin.svg" alt="pin">
-                            </div>
-                            <div>
-                                <h3>Kontakt</h3>
-                            </div>
-                        </div>
-                        <div class="footer-item-content">
-                            <div class="section-output">
-                                <p>KOSYKA, s.r.o.<br>
-                                Hruškové Dvory 118<br>
-                                586 01 Jihlava<br>
-                                Česká Republika<br>
-                                GPS: 49,412415°N, 15,604766°E</p>
-                            </div>
-                            <div class="footer-contact">
-                                <a href="#" class="footer-contact-phone">+420 123 456 789</a>
-                                <a href="#" class="footer-contact-email">info@kosyka.cz</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
-                    <div class="footer-item">
-                        <div class="footer-item-header">
-                            <div>
-                                <img src="img/icons/icon-links.svg" alt="links">
-                            </div>
-                            <div>
-                                <h3>Odkazy</h3>
-                            </div>
-                        </div>
-                        <div class="footer-item-content">
-                            <ul class="footer-menu">
-                                <li>
-                                    <a href="#">
-                                        O společnosti
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Produkty                                
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Kvalita
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Technologie
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Nabídky spolupráce
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Kariéra
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Kontakt
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 col-xl-3 mt-5 mt-lg-0">
-                    <div class="footer-item">
-                        <div class="footer-item-header">
-                            <div>
-                                <img src="img/icons/icon-shield.svg" alt="shield">
-                            </div>
-                            <div>
-                                <h3>Certifikáty</h3>
-                            </div>
-                        </div>
-                        <div class="footer-item-content">
-                            <ul class="footer-certificates">
-                                <li>
-                                    <a href="#">
-                                        ISO 9001: 2015
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        ISO 14001: 2015                                
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        IATF 16949
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="copyright section-background-light">
-        <div class="container">
-            <p>COPYRIGHT © 2023 kosyka.cz | TVORBA WWW STRÁNEK <a href="https://machin.cz/">MACHIN.CZ</a></p>
-        </div>
-    </div>
+    </footer>
     
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -1,5 +1,5 @@
 /* 
-Theme name: Kosyka
+Theme name: CS PRO
 Author: Jan Kolařík
 Author's url: www.jan-kolarik.cz
 */
@@ -10,24 +10,13 @@ Author's url: www.jan-kolarik.cz
 @import "defaults/functions";
 
 // Page Components
-@import "components/animations";
-@import "components/buttons";
-@import "components/banners";
-@import "components/sections";
-@import "components/aboutus";
-@import "components/products";
-@import "components/copyright";
-@import "components/news";
-@import "components/quality";
-@import "components/technologies";
-@import "components/containers";
-@import "components/forms";
-@import "components/benefits";
-@import "components/positions";
-@import "components/address";
-@import "components/contacts";
-@import "components/components";
-@import "components/download";
+@import "components/section";
+@import "components/banner";
+@import "components/services";
+@import "components/references";
+@import "components/about";
+@import "components/button";
+@import "components/map";
 
 // Pages
 @import "pages/subpage";
@@ -35,3 +24,15 @@ Author's url: www.jan-kolarik.cz
 // Layouts
 @import "layout/header";
 @import "layout/footer";
+
+@media (min-width: $xl) {
+    .container-xl-fluid {
+        max-width: 100%;
+    }
+}
+.link-highlighted {
+    color: $tertiary-color;
+    &:hover {
+        text-decoration: underline;
+    }
+}

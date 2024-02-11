@@ -1,100 +1,161 @@
 .footer {
-    background-image: url("../img/layout-footer-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 4rem 0;
-    @include media("md") {
+    background-color: #1c1f22;
+    padding: 5rem 0;
+    @media (max-width: $md) {
         padding: 3rem 0;
     }
-    &-address {
-        @media (max-width: 1500px) and (min-width: 1200px) {
-            margin-left: 0;
-            width: 50%;
-        }
-    } 
-    &-item {
-        &-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            @include media("md") {
-                justify-content: center;
-                margin-bottom: 1rem;
-            }
-            & > div:first-child {
-                width: 2.25rem;
-                @include media("md") {
-                    width: auto;
-                    margin-right: .5rem;
-                }
-            }
-            h3 {
-                color: var(--secondary-color);
-                font-size: 16px;
-                letter-spacing: 1.25px;
-                line-height: 30px;
-                text-transform: uppercase;
-                font-weight: 500;
-                margin-bottom: 0;
-            }
-        }
-        &-content {
-            margin-left: 2.25rem;
-            @include media("md") {
-                margin-left: 0;
-                text-align: center;
-            }
+    h3 {
+        font-size: 17px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    p, li {
+        color: $tertiary-color;
+    }
+    &-phone, &-email {
+        display: block;
+        width: fit-content;
+        background-repeat: no-repeat;
+        transition: .15s ease-in-out;
+    }
+    &-phone {
+        font-size: 28px;
+        line-height: 34px;
+        color: $secondary-color !important;
+        font-weight: 700;
+        padding-right: 1.25rem;
+        background-image: url("../img/icons/arrow-default.svg");
+        background-size: 0 6px;
+        background-position: right 1rem top 14px;
+        &:hover {
+            background-position: right 0 top 14px;
+            background-size: 14px 6px;
         }
     }
-    &-menu, .section-output {
-        a, p {
-            color: var(--light-color);
-            font-size: 16px;
-            line-height: 30px;
-            font-weight: 400;
-            @include media("md") {
-                font-size: 15px;
+    &-email {
+        font-size: 17px;
+        line-height: 23px;
+        color: $highlight-color !important;
+        font-weight: 400;
+        padding-right: 1.25rem;
+        background-image: url("../img/icons/arrow-default-orange.svg");
+        background-size: 0 6px;
+        background-position: right 1rem top 10px;
+        &:hover {
+            background-position: right 0 top 10px;
+            background-size: 14px 6px;
+        }
+    }
+    &-item {
+        &-logo {
+            padding-left: 5rem;
+            background-image: url("../img/logo-footer.svg");
+            background-repeat: no-repeat;
+            background-position: top left;
+            @media (max-width: $md) {
+                padding-left: 0;
+                padding-top: 5.5rem;
             }
-        }    
+        }
+        &-middle {
+            padding-left: 3rem;
+            @media (max-width: $xxl) {
+                padding-left: 1.5rem;
+            }
+            @media (max-width: $xl) {
+                padding-left: 0;
+            }
+        }
     }
     &-menu {
         list-style: none;
         padding: 0;
         margin: 0;
+        @media (max-width: $xl) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: .5rem 2rem;
+        }
+        @media (max-width: $md) {
+            flex-direction: column;
+            gap: .25rem;
+        }
         li {
             a {
+                font-size: 17px;
+                line-height: 32px;
+                color: $tertiary-color;
+                font-weight: 400;
                 text-decoration: none;
+                transition: .15s ease-in-out;
                 &:hover {
-                    color: var(--secondary-color);
+                    color: $highlight-color;
                 }
             }
         }
     }
-    &-certificates {
-        @extend .footer-menu;
-        li a {
+    &-contact {
+        &-top {
+            margin-bottom: 2.5rem;
+            @media (max-width: $xl) {
+                margin-bottom: 1.5rem;
+            }
+        }
+        p {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: $tertiary-color;
+            font-weight: 500;
+            margin-bottom: .75rem;
+        }
+        h4 {
+            font-size: 30px;
             line-height: 36px;
+            color: $secondary-color;
+            font-weight: 500;
+            font-family: $font2;
+            margin-bottom: 0;
         }
     }
-    &-contact {
-        margin-top: 2.5rem;
-        a {
-            display: block;
+    &-copyright {
+        margin-top: 5rem;
+        @media (max-width: $md) {
+            margin-top: 3rem;
         }
-        &-phone {
-            margin-top: .3rem;
-            font-size: 30px;
-            line-height: 40px;
-            color: var(--secondary-color) !important;
-            font-weight: 500;
-        }
-        &-email {
-            margin-top: .3rem;
-            font-size: 20px;
+        p {
+            &,a {
+                color: darken($tertiary-color, 25%);
+            }
+            color: $tertiary-color;
+            font-size: 15px;
             line-height: 28px;
-            color: var(--highlight-color) !important;
             font-weight: 400;
+            margin-bottom: 0;
+            span { 
+                @media (max-width: $sm) {
+                    display: block;
+                }
+                &:not(:last-child)::after {
+                    content: "|";
+                    margin: 0 .25rem 0 .5rem;
+                    @media (max-width: $sm) {
+                        content: none;
+                    }
+                }
+            }
+            a {
+                transition: .15s ease-in-out;
+                &:hover {
+                    color: $highlight-color;
+                }
+            }
         }
     }
 }

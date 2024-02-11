@@ -1,0 +1,46 @@
+.services {
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        @media (max-width: $sm) {
+            gap: .75rem;
+        }
+    }
+    &-item {
+        background-color: $highlight-color;
+        border-radius: 7px;
+        padding: .5rem;
+        max-width: 215px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        @include flexCenterDir(column);
+        gap: 1.5rem;
+        transition: .15s ease-in-out;
+        @media (max-width: $sm) {
+            max-width: 100%;
+            aspect-ratio: unset;
+            padding: 2rem 1.25rem;
+        }
+        img {
+            height: 80px;
+            object-fit: scale-down;
+        }
+        span {
+            display: block;
+            color: $secondary-color;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 800;
+            font-family: $font2;
+            display: flex;
+            align-items: center;
+        }
+        &:hover {
+            background-color: $section-color;
+        }
+    }
+}

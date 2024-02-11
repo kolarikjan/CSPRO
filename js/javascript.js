@@ -2,21 +2,33 @@ $(document).ready(function () {
 
     Fancybox.bind("[data-fancybox]", {});
 
-    $('.owl-banner-technologies').owlCarousel({
+    $('.banner-owl').owlCarousel({
         items:1,
         loop:false,
         rewind:true,
-        navText:['<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 8" width="10" height="8"><g id="Technology"><path id="-e-icon-arrow-banner" class="s0" d="m0 4l4.1 3.8q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2v-0.1q0.3-0.2 0.3-0.5 0-0.4-0.3-0.6l-1.8-1.8h5.6c0.5 0 0.9-0.3 0.9-0.8 0-0.5-0.4-0.8-0.9-0.8h-5.6l1.8-1.8q0.3-0.2 0.3-0.6 0-0.3-0.3-0.5v-0.1q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2l-4.1 3.8z"/></g></svg>','<svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 10 8" width="10" height="8"><g id="Technology"><path id="-e-icon-arrow-banner" class="s0" d="m0 4l4.1 3.8q0.2 0.2 0.6 0.2 0.4 0 0.6-0.2v-0.1q0.3-0.2 0.3-0.5 0-0.4-0.3-0.6l-1.8-1.8h5.6c0.5 0 0.9-0.3 0.9-0.8 0-0.5-0.4-0.8-0.9-0.8h-5.6l1.8-1.8q0.3-0.2 0.3-0.6 0-0.3-0.3-0.5v-0.1q-0.2-0.2-0.6-0.2-0.4 0-0.6 0.2l-4.1 3.8z"/></g></svg>'],
-        margin:40,
+        margin:0,
+        nav:false,
+        dots:false
+    });
+
+    $('.references-owl').owlCarousel({
+        items:1,
+        loop:false,
+        rewind:true,
+        margin:24,
         nav:true,
+        navText: ['<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="10" height="16"><g id="References"><path id="-e-arrow-banner" class="s0" d="m1.6 15.5l-1.1-1 6.7-6.4-6.7-6.4 1.1-0.9 6.7 6.3 1.1 1-1.1 1z"/></g></svg>','<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="10" height="16"><g id="References"><path id="-e-arrow-banner" class="s0" d="m1.6 15.5l-1.1-1 6.7-6.4-6.7-6.4 1.1-0.9 6.7 6.3 1.1 1-1.1 1z"/></g></svg>'],
         dots:false,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items:1,
             },
-            576:{
+            576: {
                 items:2,
-            }
+            },
+            993: {
+                items:3,
+            },
         }
     });
 
@@ -31,7 +43,5 @@ $(document).ready(function () {
             e.preventDefault();
         });
     }
-    
-    scrollAnimationSet();
 
 });
