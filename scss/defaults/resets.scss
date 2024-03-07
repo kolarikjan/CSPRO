@@ -39,10 +39,10 @@ img, picture, video, canvas, svg {
   height: auto;
 }
 input, textarea, button, select {
+  border: none;
   &, &:focus, &:active {
     outline: none;
     box-shadow: none;
-    border: none;
   }
 }
 .w-fit {

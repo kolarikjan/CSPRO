@@ -1,0 +1,39 @@
+.address {
+    h4 {
+        font-family: $font1;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    &-text {
+        background-repeat: no-repeat;
+        background-position: top 3px left;
+        padding-left: 2.25rem;
+        a {
+            color: $primary-color;
+        }
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        &-pin {
+            background-image: url("../img/icons/icon-pin.svg");
+        }
+        &-company {
+            background-image: url("../img/icons/icon-companyinfo.svg");
+        }
+    }
+    &-store {
+        &-imagebox {
+            max-height: 300px;
+            img {
+                border-radius: 5px;
+            }
+        }
+        &-text {
+            padding-left: 1.5rem;
+            @media (max-width: $lg) {
+                padding-left: 0;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

@@ -17,6 +17,8 @@ Author's url: www.jan-kolarik.cz
 @import "components/about";
 @import "components/button";
 @import "components/map";
+@import "components/form";
+@import "components/address";
 
 // Pages
 @import "pages/subpage";
@@ -30,9 +32,10 @@ Author's url: www.jan-kolarik.cz
         max-width: 100%;
     }
 }
-.link-highlighted {
-    color: $tertiary-color;
+.text-dark {
+    color: $highlight-color;
     &:hover {
+        color: $highlight-color;
         text-decoration: underline;
     }
 }
